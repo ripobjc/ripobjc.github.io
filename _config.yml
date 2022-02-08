@@ -28,7 +28,7 @@ twitter_username: objcppforever
 github_username:  tmngtk
 
 # Build settings
-remote-theme: orderedlist/minimal #jekyll-theme-cayman #minima #jekyll-theme-cayman
+remote-theme: jekyll/minima #jekyll-theme-cayman #minima #jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll-avatar
