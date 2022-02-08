@@ -4,3 +4,4 @@
 
 layout: home
 ---
+NSLog(@"Hello world.");
