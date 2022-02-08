@@ -30,7 +30,7 @@ twitter_username: objcppforever
 github_username:  tmngtk
 
 # Build settings
-theme: jekyll-theme-tactile
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
