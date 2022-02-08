@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Objective-C++ FOrever
+title: Objective-C++ Forever
 ---
-```NSLog(@"Hello world.");```
+{% highlight Objective-C %}
+NSLog(@"Hello world.");
+{% endhighlight %}
