@@ -29,7 +29,8 @@ github_username:  tmngtk
 
 # Build settings
 # theme: minima #jekyll-theme-cayman #minima #jekyll-theme-cayman
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: mmistakes/so-simple-theme@3.2.0
 # remote-theme: mmistakes/so-simple-theme
 #pages-themes/primer
 
@@ -41,7 +42,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-titles-from-headings
-  - jekyll-include-cache
+  # - jekyll-include-cache
   
 #  - jekyll-seo-tag
 
