@@ -7,7 +7,10 @@ sitemap: false
 
 @import "so-simple";
 
-
+#page-title {
+    color: red;
+    text-decoration: underline;
+}
 
 $serif-font-family: "Helvetica", sans-serif; //"Lora", serif;
 $sans-serif-font-family: "Source Sans Pro", sans-serif;
