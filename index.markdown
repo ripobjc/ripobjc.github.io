@@ -5,6 +5,6 @@
 layout: home
 title: Objective-C++ Forever
 ---
-{% highlight Objective-C %}
+{% highlight objc %}
 NSLog(@"Hello world.");
 {% endhighlight %}
