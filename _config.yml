@@ -29,7 +29,7 @@ github_username:  tmngtk
 
 # Build settings
 # theme: minima #jekyll-theme-cayman #minima #jekyll-theme-cayman
-remote-theme: cotes2020/jekyll-theme-chirpy
+remote-theme: mmistakes/jekyll-theme-basically-basic
   - jekyll-feed
   - jekyll-avatar
   - jekyll-paginate
