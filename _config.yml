@@ -28,8 +28,8 @@ twitter_username: objcppforever
 github_username:  tmngtk
 
 # Build settings
-# theme: minima #jekyll-theme-cayman #minima #jekyll-theme-cayman
-remote-theme: mmistakes/so-simple-theme
+theme: minima #jekyll-theme-cayman #minima #jekyll-theme-cayman
+# remote-theme: mmistakes/so-simple-theme
 #pages-themes/primer
 
 plugins:
