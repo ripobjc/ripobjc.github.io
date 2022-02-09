@@ -5,7 +5,6 @@ sitemap: false
 
 @charset "utf-8";
 
-@import "so-simple";
 
 #page-title {
     color: red;
@@ -21,3 +20,5 @@ $headline-font-family: $sans-serif-font-family;
 $title-font-family: $serif-font-family;;
 $description-font-family: $serif-font-family;
 $meta-font-family: $serif-font-family;
+
+@import "so-simple";
