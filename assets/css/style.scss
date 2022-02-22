@@ -5,6 +5,11 @@
 
 .markdown-body h1
 {
-    border-bottom-style: none;
-    margin-bottom: 2.5em;
+    border-bottom-style: none !important;
+    margin-bottom: 2.5em !important;
+}
+
+
+.footer.mt-5 {
+    margin-top: 2.5em !important;
 }
