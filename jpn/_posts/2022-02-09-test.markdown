@@ -2,7 +2,7 @@
 layout: post
 title:  "テスト"
 lang: "ja-JP"
-category: objective-c japanese
+category: objective-c jpn
 ---
 あい
 
