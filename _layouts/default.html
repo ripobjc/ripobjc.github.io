@@ -7,7 +7,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}">
     {% include head-custom.html %}
   </head>
   <body>
@@ -21,7 +21,7 @@
       {{ content }}
 
       <div class="footer border-top border-gray-light mt-5 pt-3 text-gray">
-        &copy; <a href="/">Objective-C++ Forever</a> by <a href="http://twitter.com/objcppforever" target="_blank">@objcppforever</a>
+        &copy; <a href="{{ "/" | absolute_url }}">Objective-C++ Forever</a> by <a href="http://twitter.com/objcppforever" target="_blank">@objcppforever</a>
       </div>
       {%- if site.github.private != true and site.github.license -%}
       {%- endif -%}
