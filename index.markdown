@@ -7,5 +7,6 @@ layout: home
 ---
 
 {% highlight objc %}
+std::vector <NSString *> ss = {@"Hello", @"World"};
 NSLog(@"Hello world.");
 {% endhighlight %}
