@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "テスト"
-date:   2022-02-08 16:55:06 +0100
+lang: "ja-JP"
+category: objective-c japanese
 ---
 あい
 
