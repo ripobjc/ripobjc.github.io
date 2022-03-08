@@ -2,7 +2,7 @@
 layout: post
 title:  "[AVFoundation] サンプルレートを変換する"
 categories: ja
-lang: "ja-JP"
+lang: "ja"
 tags: objective-c 
 ---
 

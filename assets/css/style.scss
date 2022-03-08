@@ -11,12 +11,12 @@ a {
 
 .markdown-body h1
 {
-    font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;;
     border-bottom-style: none !important;
     margin-bottom: 2em !important;
 
     [lang=ja] & {
-        font-family: "Hiragino Maru Gothic ProN", ui-rounded, "SF Pro Rounded",  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-family: "Hiragino Maru Gothic ProN", ui-rounded, "SF Pro Rounded",  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;;
     }
 }
 
