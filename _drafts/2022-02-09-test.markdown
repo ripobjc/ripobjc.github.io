@@ -2,7 +2,8 @@
 layout: post
 title:  "テスト"
 lang: "ja-JP"
-categories: objective-c ja
+categories: ja
+tags: objective-c
 ---
 あい
 
