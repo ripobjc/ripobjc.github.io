@@ -3,6 +3,10 @@
 
 @import "jekyll-theme-primer";
 
+a {
+    color: rgb(4,122,255) !important;
+}
+
 .markdown-body h1
 {
     border-bottom-style: none !important;
