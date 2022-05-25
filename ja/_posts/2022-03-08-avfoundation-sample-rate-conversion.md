@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[AVFoundation] サンプルレートを変換する"
+title:  "[AVFoundation] サンプルレートの変換"
 categories: ja
 lang: "ja"
 tags: objective-c 
