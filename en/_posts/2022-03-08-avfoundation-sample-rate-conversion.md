@@ -5,8 +5,8 @@ categories: en
 tags: objective-c AVFoundation audio
 ---
 
-{% highlight objc %}
 ```
+{% highlight objc %}
 AVAudioFile *file;
 AVAudioFormat *internalFormat;
 AVAudioPCMBuffer *audioFileBuffer;
@@ -72,14 +72,15 @@ if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {
     assert(err == nil);
     audioFileBuffer = convertedAudioBuffer;
 }
-
-```
 {% endhighlight %}
-
-
-The following AVAudioConverter's synchronous methond does *not* convert the sample rate.
 ```
+
+
+Note the following AVAudioConverter's simpler synchronous methond does *not* convert the sample rate.
+```
+{% highlight objc %}
 [converter convertToBuffer:convertedAudioBuffer
                fromBuffer:audioFileBuffer
                     error:&err];
+{% endhighlight %}
 ```
