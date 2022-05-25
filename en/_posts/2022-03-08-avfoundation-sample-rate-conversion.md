@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "Sample Rate Conversion using AVFoundation"
+title:  "Sample Rate Conversion using AVFoundation 🔈"
 categories: en
 tags: objective-c AVFoundation audio
 ---
 
+{% comment %}
 ```
+{% endcomment %}
 {% highlight objc %}
 AVAudioFile *file;
 AVAudioFormat *internalFormat;
@@ -25,8 +27,7 @@ audioFileBuffer = [[AVAudioPCMBuffer alloc] initWithPCMFormat:file.fileFormat
 [file readIntoBuffer:audioFileBuffer
                error:&err];
 
-if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {
-    
+if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {    
     AVAudioConverter *converter;
     AVAudioPCMBuffer *convertedAudioBuffer;
     NSError *err = nil;
@@ -48,8 +49,8 @@ if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {
             withInputFromBlock:^AVAudioBuffer * _Nullable(AVAudioPacketCount inNumberOfPackets,
                                                           AVAudioConverterInputStatus * _Nonnull outStatus)
         {
-            int max_processing_frames = 8192 * 4;
-            int n_processing_frame = MIN(MIN(inNumberOfPackets, max_processing_frames) , audioFileBuffer.frameLength-counter);
+            int processing_frames_per_loop = 8192 * 4;
+            int n_processing_frame = MIN(MIN(inNumberOfPackets, processing_frames_per_loop) , audioFileBuffer.frameLength-counter);
             AVAudioPCMBuffer *tmpBuffer = [[AVAudioPCMBuffer alloc] initWithPCMFormat:convertedAudioBuffer.format
                                                                         frameCapacity:n_processing_frame];
 
@@ -73,14 +74,21 @@ if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {
     audioFileBuffer = convertedAudioBuffer;
 }
 {% endhighlight %}
+{% comment %}
 ```
+{% endcomment %}
 
 
 Note the following AVAudioConverter's simpler synchronous methond does *not* convert the sample rate.
+
+{% comment %}
 ```
+{% endcomment %}
 {% highlight objc %}
 [converter convertToBuffer:convertedAudioBuffer
                fromBuffer:audioFileBuffer
                     error:&err];
 {% endhighlight %}
+{% comment %}
 ```
+{% endcomment %}
