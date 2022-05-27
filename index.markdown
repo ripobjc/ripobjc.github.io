@@ -6,6 +6,11 @@ layout: home
 # title: Home
 ---
 
-{% highlight objc %}
-std::vector <NSString *> ss = {@"Hello", @"World"};
+{% highlight cpp %}
+std::function<void()> f = ^() {
+    std::vector <NSString *> ss = {@"Now", @"you", @"like", @"this", @"fantastic", @"language", @"!"};
+};
 {% endhighlight %}
+
+<p>&nbsp;</p>
+
