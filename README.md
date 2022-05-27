@@ -1,3 +1,3 @@
 # Objective-C++ Forever
 
-Who still codes in Objective-C++?
+Who cares Objective-C++ anymore?

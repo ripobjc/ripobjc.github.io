@@ -22,10 +22,10 @@ title: Objective-C++ Forever
 email: 18259+tmngtk@users.noreply.github.com
 description: >- # this means to ignore newlines until "baseurl:"
   Who still codes in Objective-C++ in 2022
-baseurl: "/ripobjc" # the subpath of your site, e.g. /blog
-url: "https://tmngtk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://ripobjc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ripobjc
-github_username:  tmngtk
+github_username:  ripobjc
 timezone: Europe/Paris
 # Build settings
 # theme: minima #jekyll-theme-cayman #minima #jekyll-theme-cayman
