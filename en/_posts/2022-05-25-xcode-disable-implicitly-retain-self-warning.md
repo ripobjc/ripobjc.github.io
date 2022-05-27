@@ -25,11 +25,11 @@ However, this kind of code
 
 will generate the following warning.
 
-```Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior```
+> Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior
 
 The proper way to solve this is to make a weak reference of 'self' as Google search would say.
 
-I don't ***** for my one-off prototyping code. This not a solution but it does the job.
+I can't ***** for my one-off prototyping code. This not a solution but it does the job.
 
 {% comment %}
 ```
@@ -39,7 +39,7 @@ I don't ***** for my one-off prototyping code. This not a solution but it does t
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wimplicit-retain-self"
 
-*** Your code ***
+/* your code */
 
 #pragma clang diagnostic pop
 

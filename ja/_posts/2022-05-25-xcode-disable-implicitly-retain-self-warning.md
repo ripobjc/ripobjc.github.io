@@ -7,7 +7,7 @@ tags: objective-c clang xcode
 
 GCD ブロック、便利だよね．いまいち人気なさそうだけど…
 
-ただこういうの
+ただこういうのは
 
 {% comment %}
 ```
@@ -24,7 +24,7 @@ GCD ブロック、便利だよね．いまいち人気なさそうだけど…
 {% endcomment %}
 
 
-```Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior```
+> Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior
 
 といちいち怒られる．
 
@@ -40,7 +40,7 @@ GCD ブロック、便利だよね．いまいち人気なさそうだけど…
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wimplicit-retain-self"
 
-〜〜コード〜〜
+/* あなたのコード */
 
 #pragma clang diagnostic pop
 
