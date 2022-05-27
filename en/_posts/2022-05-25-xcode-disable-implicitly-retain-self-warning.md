@@ -5,7 +5,8 @@ lang: "en"
 tags: objective-c clang xcode
 ---
 
-GCD block is not popular but useful.
+GCD block seams not so popular but I find it useful.
+
 However, this kind of code
 
 {% comment %}
@@ -26,6 +27,10 @@ will generate the following warning.
 
 ```Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior```
 
+The proper way to solve this is to make a weak reference of 'self' as Google search would say.
+
+I don't ***** for my one-off prototyping code. This not a solution but it does the job.
+
 {% comment %}
 ```
 {% endcomment %}
@@ -43,5 +48,4 @@ will generate the following warning.
 ```
 {% endcomment %}
 
-This disable the warning.
-The 'self' will be retained anyway, at your own risk.
+Warnings disappears but the 'self' will stay retained. At your own risk.

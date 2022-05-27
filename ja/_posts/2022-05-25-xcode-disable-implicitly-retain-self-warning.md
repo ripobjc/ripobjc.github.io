@@ -5,7 +5,8 @@ lang: "ja"
 tags: objective-c clang xcode
 ---
 
-GCD ブロック、便利だよね．不人気だけど．
+GCD ブロック、便利だよね．いまいち人気なさそうだけど…
+
 ただこういうの
 
 {% comment %}
@@ -25,7 +26,11 @@ GCD ブロック、便利だよね．不人気だけど．
 
 ```Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior```
 
-と怒られる．
+といちいち怒られる．
+
+正しい解決方法は self の weak リファレンスを作って、それをキャプチャーする．ググると出てくる．
+
+使い捨てのコードにそんな事やってられないので
 
 {% comment %}
 ```
@@ -44,5 +49,6 @@ GCD ブロック、便利だよね．不人気だけど．
 ```
 {% endcomment %}
 
-以上の様に挟み込めば出なくなる．
-self は retain されてしまうので自己責任で．
+以上の様に挟み込めば黙っってくれる．
+
+self は retain されたままなので自己責任で．

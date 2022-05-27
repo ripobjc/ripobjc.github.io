@@ -80,7 +80,8 @@ if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {
 {% endcomment %}
 
 
-以下の AVAudioConverter のメソッドはサンプルレートは変換しません．
+以下の AVAudioConverter のメソッドはサンプルレートの変換はしない．
+
 時間かかる処理は非同期でよろしくとの事．
 
 {% comment %}
