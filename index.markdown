@@ -6,7 +6,7 @@ layout: home
 # title: Home
 ---
 
-{% highlight cpp %}
+{% highlight objc %}
 std::function<void()> f = ^() {
     std::vector <NSString *> ss = {@"Now", @"you", @"like", @"this", @"fantastic", @"language", @"!"};
 };

@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "AVFoundation を使ってサンプルレートを変換 🔈"
-categories: ja
+title:  "AVFoundation を使ったサンプルレートを変換 🔈"
 lang: "ja"
 tags: objective-c AVFoundation audio
 ---
@@ -81,7 +80,8 @@ if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {
 {% endcomment %}
 
 
-以下の AVAudioConverter のメソッドはサンプルレートを変換してくれません．
+以下の AVAudioConverter のメソッドはサンプルレートは変換しません．
+時間かかる処理は非同期でよろしくとの事．
 
 {% comment %}
 ```

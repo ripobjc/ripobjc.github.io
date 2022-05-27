@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sample Rate Conversion using AVFoundation 🔈"
-categories: en
+lang: "en"
 tags: objective-c AVFoundation audio
 ---
 
@@ -79,7 +79,7 @@ if (audioFileBuffer.format.sampleRate != internalFormat.sampleRate) {
 {% endcomment %}
 
 
-Note the following AVAudioConverter's simpler synchronous methond does *not* convert the sample rate.
+The following AVAudioConverter's simpler synchronous methond does not convert the sample rate.
 
 {% comment %}
 ```
