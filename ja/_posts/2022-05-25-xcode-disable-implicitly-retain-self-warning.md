@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Xcode の Block implicitly retains self 警告を無効にする ⚠️"
+title:  "Xcode の Block implicitly retains self 警告を無効にする方法 ⚠️"
 lang: "ja"
 tags: objective-c clang xcode
 ---
 
-GCD ブロック、便利だよね．いまいち人気なさそうだけど…
+いまさら GCD ブロック、便利だよね．あまり人気なさそうだけど…
 
 ただこういうのは
 
@@ -26,11 +26,11 @@ GCD ブロック、便利だよね．いまいち人気なさそうだけど…
 
 > Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior
 
-といちいち怒られる．
+と怒られる．
 
-正しい解決方法は self の weak リファレンスを作って、それをキャプチャーする．ググると出てくる．
+`self->_some_ivar` と書いたり、 `self` の weak リファレンスを作ってキャプチャーするのが正しい．ググるとそればっか出てくる．
 
-使い捨てのコードにそんな事やってられないので
+使い捨てのコードにいちいちそんな事してられないので、以下は正しくない便利な方法．
 
 {% comment %}
 ```
@@ -40,7 +40,7 @@ GCD ブロック、便利だよね．いまいち人気なさそうだけど…
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wimplicit-retain-self"
 
-/* あなたのコード */
+/* コード */
 
 #pragma clang diagnostic pop
 
@@ -49,6 +49,4 @@ GCD ブロック、便利だよね．いまいち人気なさそうだけど…
 ```
 {% endcomment %}
 
-以上の様に挟み込めば黙っってくれる．
-
-self は retain されたままなので自己責任で．
+self は retain されたままなになるので自己責任で．

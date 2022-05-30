@@ -5,7 +5,7 @@ lang: "en"
 tags: objective-c clang xcode
 ---
 
-GCD block seams not so popular but I find it useful.
+ I find GCD blocks useful.
 
 However, this kind of code
 
@@ -23,13 +23,13 @@ However, this kind of code
 ```
 {% endcomment %}
 
-will generate the following warning.
+will generate a warning as below.
 
 > Block implicitly retains 'self'; explicitly mention 'self' to indicate this is intended behavior
 
-The proper way to solve this is to make a weak reference of 'self' as Google search would say.
+You should write `self->_some_ivar` or caputer a weak reference of `self`. This is what the internet teaches you.
 
-I can't ***** for my one-off prototyping code. This not a solution but it does the job.
+It's too lengthly for one-off prototyping codes. Here's a less formal but useful workaround.
 
 {% comment %}
 ```
@@ -48,4 +48,4 @@ I can't ***** for my one-off prototyping code. This not a solution but it does t
 ```
 {% endcomment %}
 
-Warnings disappears but the 'self' will stay retained. At your own risk.
+Warnings will disappear but the `self` stays retained. Not for the production codes.
