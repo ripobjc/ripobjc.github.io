@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AVFoundation を使ったサンプルレートを変換 🔈"
+title:  "AVFoundation を使ったサンプルレートの変換 🔈"
 lang: "ja"
 tags: objective-c AVFoundation audio
 ---
