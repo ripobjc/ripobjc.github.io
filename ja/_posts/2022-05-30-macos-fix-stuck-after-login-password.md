@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "macOS がログインパスワードを入れた後に進まない時の解決方法、またはログインせずにユーザーを追加する方法 🖥"
+title:  "macOS がログインパスワードを入れた後に進まない時の解決方法 🖥"
 lang: "ja"
 tags: macos
 ---
+
+または、ログインせずにユーザーを追加する方法（驚愕）．
 
 Time Machine Backup からリストアした後、正しいパスワードを入力しても風船がクルクル回って一向にログインしない．リストアし直しても解決しない場合の解決方法．
 
@@ -23,6 +25,6 @@ Time Machine Backup からリストアした後、正しいパスワードを入
 
 元ユーザーのパスワードを1文字とかにしてたのが良くなかったかも知れない．
 
-M1 以降の Mac の場合はリカバリーモードからターミナルを起動して何とかする．上の方法はセキュリティ・ホール感あるので無理かも？
+M1 以降の Mac の場合はリカバリーモードからターミナルを起動して何とかしたいけど、上の方法はセキュリティ・ホール感あり過ぎて無理かも．
 
 ref: [Can't Log In to Your Mac? Create a New Admin Account – Lifewire](https://www.lifewire.com/create-new-admin-account-for-login-issues-2259976)
