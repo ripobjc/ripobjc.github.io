@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "macOS がログインパスワードを入れた後に進まない 🖥"
+title:  "macOS がログインパスワードを入れた後に進まない時の解決方法、またはログインせずにユーザーを追加する方法 🖥"
 lang: "ja"
 tags: macos
 ---
