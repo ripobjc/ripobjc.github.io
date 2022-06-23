@@ -8,7 +8,7 @@ layout: home
 
 {% highlight objc %}
 std::function<void()> f = ^() {
-    std::vector <NSString *> ss = {@"Now", @"you", @"like", @"this", @"fantastic", @"language", @"!"};
+    std::vector <NSString *> ss = {@"it", @"is", @"a", @"bad", @"idea"};
 };
 {% endhighlight %}
 
