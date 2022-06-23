@@ -10,7 +10,7 @@ layout: home
 std::function<void()> f = ^() {
     std::vector <NSString *> ss = {
         @"We look at the present through a rear-view mirror.",
-        @"We march backwards into the future.",
+        @"We march backwards into the future."
     };
 };
 {% endhighlight %}
